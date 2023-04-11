@@ -1,6 +1,6 @@
 # chiado-ethers-mre
 
-This is a minimal reproducible example of a bug in the `ethers` library when transacting on `Chiado` network.
+This is a minimal reproducible example of a bug in the `hardhat` library when transacting on `Chiado` network.
 
 ## Steps to reproduce
 
