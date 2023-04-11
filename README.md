@@ -26,7 +26,7 @@ The `JsonRpcSigner` is connected to a [`AutomaticGasPriceProvider`](https://gith
 
 It uses `eth_feeHistory` to determine the gas fee data, in which the `maxPriorityFeePerGas` is set [here](https://github.com/NomicFoundation/hardhat/blob/dfc4465026cc4ccfadced5cffe84a53ad8acdc50/packages/hardhat-core/src/internal/core/providers/gas-providers.ts#L271) based on the returned `reward` value.
 
-In `Chiado` network, the `reward` value seems to always be `0`, which results in `maxPriorityFeePerGas` being `0`, causing the transaction to fail.
+In `Chiado` network, the `reward` value can be `0` since a lot of blocks are empty, which results in `maxPriorityFeePerGas` being `0`, causing the transaction to fail.
 
 ### `eth_feeHistory` on Chiado
 
